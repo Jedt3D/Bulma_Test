@@ -1,0 +1,17 @@
+{
+  "name": "Bulma-Test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.63.6"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url public/styles/main.scss public/styles/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  }
+}
